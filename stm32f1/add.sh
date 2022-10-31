@@ -3,7 +3,7 @@
 while true 
 do
     rm -f model/add_regs.txt
-    ./execute_firmware.py --firmware drone.bin 
+    ./execute_firmware.py --firmware 
     FILE=model/add_regs.txt
     if [ -f "$FILE" ]; then
         cat $FILE
